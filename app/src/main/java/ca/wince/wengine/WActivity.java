@@ -8,6 +8,10 @@ import android.app.Activity;
 import android.os.Bundle;
 
 public abstract class WActivity extends Activity{
+    //MEMBER VARIABLES
+    //WView
+    private WView wView;
+
 
     //STARTING AND PAUSING APPLICATION
     /*
@@ -18,6 +22,11 @@ public abstract class WActivity extends Activity{
     public void onCreate(Bundle savedInstance){
         //Call Parent
         super.onCreate(savedInstance);
+
+        //Create a wView
+        //Set as activity view
+        wView = new WView(this);
+        setContentView(wView);
 
         //Start
         start();
@@ -52,7 +61,6 @@ public abstract class WActivity extends Activity{
     //Ease of use functions
     public abstract void start();
     public abstract void stop();
-
     //END STARTING AND PAUSING APPLICATION
 }
 
