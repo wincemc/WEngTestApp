@@ -9,8 +9,11 @@ import android.os.Bundle;
 
 public abstract class WActivity extends Activity{
     //MEMBER VARIABLES
+    //Private
     //WView
     private WView wView;
+
+    //END MEMEBER VARIABLES
 
 
     //STARTING AND PAUSING APPLICATION
