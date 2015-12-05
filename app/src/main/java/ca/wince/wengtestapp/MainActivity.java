@@ -1,11 +1,22 @@
 package ca.wince.wengtestapp;
 
+import android.os.Bundle;
+
 import ca.wince.wengine.WActivity;
 
 /**
- * Created by User on 12/4/2015.
+ * Application Logic Entrance
  */
+
 public class MainActivity extends WActivity{
+
+    //Constructor
+    @Override
+    public void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+    }
+
+
     @Override
     public void start() {
 
