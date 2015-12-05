@@ -11,6 +11,15 @@ import javax.microedition.khronos.opengles.GL10;
  */
 public class WRenderer  implements Renderer{
 
+    //MEMBER VARS
+    WColor bgColor;
+
+    //CONSTRUCTORS
+    public WRenderer(){
+        bgColor = new WColor();
+    }
+    //END CONSTRUCTORS
+
     /*
         Called once to set up the view's opengl environment
      */
@@ -18,7 +27,7 @@ public class WRenderer  implements Renderer{
     public void onSurfaceCreated(GL10 gl, EGLConfig config) {
 
         // Set the background frame color
-        GLES20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        GLES20.glClearColor(bgColor.getRed(), bgColor.getGreen(), bgColor.getBlue(), bgColor.getAlpha());
     }
 
     /*
