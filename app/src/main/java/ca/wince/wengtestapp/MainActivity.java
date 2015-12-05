@@ -3,7 +3,7 @@ package ca.wince.wengtestapp;
 import ca.wince.wengine.WActivity;
 
 /**
- * Created by User on 12/4/2015.
+ * Application Logic Entrance
  */
 public class MainActivity extends WActivity{
     @Override
